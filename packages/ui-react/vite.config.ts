@@ -5,7 +5,7 @@ import dts from 'vite-plugin-dts';
 
 export default defineConfig({
   plugins: [
-      react(),
+      react({jsxRuntime:'classic'}),
       dts({
         insertTypesEntry: true
       })
@@ -22,7 +22,7 @@ export default defineConfig({
     lib: {
       formats: ['es', 'cjs'],
       entry: path.resolve('src/index.ts'),
-      name: '@tonconnect/ui-react',
+      name: 'tonconnect-ui-react19',
       fileName: (format) => {
         switch (format) {
           case 'es':
@@ -35,7 +35,7 @@ export default defineConfig({
       }
     },
     rollupOptions: {
-      external: ['react', 'react-dom', '@tonconnect/ui'],
+      external: ['react', 'react/jsx-runtime', 'react-dom', 'react-dom/client', '@tonconnect/ui'],
       output: {
         globals: {
           react: 'React',

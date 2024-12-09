@@ -1,6 +1,6 @@
 {
-  "name": "@tonconnect/ui-react",
-  "version": "2.0.10-beta.1",
+  "name": "tonconnect-ui-react19",
+  "version": "2.1.4",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build"
@@ -55,8 +55,8 @@
     "@tonconnect/ui": "2.0.10-beta.1"
   },
   "peerDependencies": {
-    "react": ">=17.0.0",
-    "react-dom": ">=17.0.0"
+    "react": ">=19.0.0",
+    "react-dom": ">=19.0.0"
   },
   "nx": {
     "tags": [
